@@ -1,8 +1,11 @@
 # multisigWallet1.sol
 an advanced wallet, requires multiple confirmation before a transaction
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
+
 //this project intends to create mutliple signatory to a wallet.
+
 contract MultiSigWallet {
     event Deposit(address indexed sender, uint amount, uint balance);// the keyword "event" updates the frontend of our smartcontract.
     event SubmitTransaction(
